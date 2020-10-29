@@ -1,0 +1,280 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+#nav-row, .sidebar-btn, .border-line{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+
+div#nav-row{
+   line-height: 50px;
+   background-color: white;
+}
+
+div#nav-row ul.menu-row{
+    float: right;
+}
+
+div#nav-row ul.menu-row li{
+    list-style-type: none;
+    float: right;
+    margin-right: 10px;
+}
+
+div#nav-row ul.menu-row li a{
+    color: black;
+    text-decoration: none;
+}
+
+div#nav-row ul.menu-row li.cart a.cart-img div{
+    height: 60px;
+    width: 55px;
+    margin-left: 10px;
+    margin-top: 5px;
+    position: relative;
+    top: 5px;
+    z-index: 1;
+    background-image: url(images/Cart.PNG);
+    background-repeat: no-repeat;
+    background-size: 55px 55px;
+}
+
+div#nav-row ul.menu-row li.home a.home-img div{
+    height: 60px;
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 5px;
+    position: relative;
+    z-index: 1;
+    background-image: url(images/Home.PNG);
+    background-repeat: no-repeat;
+    background-size: 45px 60px;
+}
+
+div#nav-row ul.menu-row li.home a{
+    
+}
+
+div#nav-row ul.menu-row li.cart a{
+    
+}
+
+span#header.site-header{
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+
+span#header.site-header a{
+    text-decoration: none;
+    color: black;
+}
+
+span#header.site-header img.logo-img{
+    max-height: 70px;
+}
+
+span#header.site-header img.name-img{
+    position: relative;
+    bottom: 18px;
+    max-height: 90px;
+    margin: 0px 0px 10px 150px;
+
+    
+}
+
+span#header.site-header img.name-img:hovers{
+    margin: 0px 15px;
+    max-height: 70px;
+    
+}
+
+span#header.site-header img.animated-logo{
+    max-height: 65px;
+    visibility:hidden;
+    
+}
+
+.sidebar-btn{
+    position: fixed;
+    z-index: 1;
+    top: 15px;
+    left: 15px;
+    height: 40px;
+    width: 56px;
+    text-align: center;
+    background: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: left 0.4s ease;
+}
+
+.sidebar-btn.click{
+    left: 265px;
+    position: fixed;
+}
+.sidebar-btn img{
+    max-height: 40px;
+}
+
+.sidebar-btn.click img:before{
+
+}
+
+.sidebar-btn.click span:before{
+    
+}
+
+.sidebar{
+    position: fixed;
+    z-index: 1;
+    bottom: 0px; 
+    width: 250px;
+    height: 100%;
+    left: -250px;
+    line-height: 65px;
+    background: #f78989;
+    transition: left 0.4s ease;
+}
+
+.sidebar.show{
+    left: 0px;
+}
+
+.sidebar .blank-top{
+    height: 55px;
+    width: 250px;
+    background: #ffa4a4;
+}
+
+nav.sidebar ul.sidebar-options{
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    background: #f78989;
+}
+
+nav.sidebar ul.sidebar-options li{
+    line-height: 65px;
+}
+
+nav.sidebar ul.sidebar-options li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 15px;
+    font-weight: 550;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+    
+}
+
+nav.sidebar ul.sidebar-options li a:hover{
+    background: #ffa4a4;
+    width: auto;
+    border-left: 3px solid white;
+}
+
+.border-line{
+    border-top: 10px solid rgb(218, 218, 218);
+    width: 100%;
+}
+
+.content-tshirt{
+    margin-left: 200px;
+    float: left;
+    display: flex;
+}
+.tshirt-sample-img{
+    
+}
+.back-button{
+    margin-left: 100px;
+    color: gray;
+}
+.back-button a{
+    list-style-type: none;
+    color: rgb(0, 0, 0);
+}
+.back-button a:hover{
+   text-decoration: none;
+   color: black;
+}
+div#carouselExampleIndicators{
+    margin: 100px 0px 50px 100px;
+    height: 700px;
+    width: 700px;
+}
+.col-md-7{
+    /*
+    position: relative;
+    bottom: 850px;
+    left: 800px;
+    */
+}
+.prev-next-navbtns{
+    position: relative;
+    left: 390px;
+}
+.prev-next-navbtns a{
+    color: black;
+}
+.prev-next-navbtns a:hover{
+    color: black;
+    text-decoration: none;
+}
+.tshirt-textbox{
+    background: #ffa357;
+    width: 50px;
+    margin-top: 50px;
+    padding: 3px 0px 3px 0px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+.textbox-link{
+    text-decoration: none;
+}
+.tshirt-price{
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(255, 86, 24);
+}
+.color-picker{
+    margin-top: -10px;
+}
+#color-circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    border: 1.5px solid rgb(168, 168, 168);
+    margin-right: 10px;
+    float: left;
+}
+#color-circle.black{
+    background-color: black;
+}
+#color-circle.white{
+    background-color: rgb(255, 255, 255);
+}
+#dropdownMenuButton{
+    width: 475px;
+    background-color: white;
+}
+.dropdown-menu{
+    width: 65%;
+}
+.quantity-control{
+    width: 75px;
+}
